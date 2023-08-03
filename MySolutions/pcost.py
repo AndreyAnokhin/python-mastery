@@ -1,5 +1,3 @@
-file_path = '../Data/portfolio.dat'
-
 def portfolio_cost(file_path):
     total_sum = 0
     with open(file_path, 'r') as file:
@@ -15,6 +13,8 @@ def portfolio_cost(file_path):
     return total_sum
 
 
-# print(portfolio_cost(file_path))
-file_path_bad_data = '../Data/portfolio3.dat'
-print(portfolio_cost(file_path_bad_data))
+if __name__ == '__main__':
+    # file_path_bad_data = '../Data/portfolio3.dat'
+    # print(portfolio_cost(file_path_bad_data))
+    file_path = '../Data/portfolio.dat'
+    print(portfolio_cost(file_path))
